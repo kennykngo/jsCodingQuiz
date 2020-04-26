@@ -9,13 +9,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
 }
 
 .choice-container {
   display: flex;
   margin-bottom: 0.5rem;
-  width: 1005;
-  /* font-size: 1.8rem; */
+  width: 100%;
+  font-size: 1.2rem;
   border: 0.1rem solid rgb(86, 165, 235, 0.25);
 }
 
@@ -26,12 +28,41 @@ body {
   transition: transform 150ms;
 }
 .choice-prefix {
-  padding: 1.5rem 2.5rem;
+  padding: 2.5rem;
   background-color: #56a5eb;
-  color: white;
+  /* color: white; */
   /* height: 100%; */
 }
 
 .choice-text {
   padding: 1.5rem;
+  width: 100%;
+  margin: 0;
+}
+
+.correct {
+  background-color: #28a745;
+  /* bg-success */
+}
+
+.incorrect {
+  background-color: #dc3545;
+  /* bg-danger */
+}
+
+/* score counter */
+.hud-prefix {
+  font-size: 2rem;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid #56a5eb;
+}
+
+#progressBarFull {
+  height: 3.4rem;
+  background-color: #56a5eb;
+  width: 0%;
 }
