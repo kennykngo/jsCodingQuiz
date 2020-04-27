@@ -17,7 +17,7 @@ function startTimer() {
   }, 1000);
 
   wrongAnswer = () => {
-    sec--;
+    sec -= 5;
     timerDisplay.innerHTML = "00:" + sec;
   };
 }
@@ -175,6 +175,8 @@ choices.forEach((choice) => {
 
     if (classToApply === "correct") {
       incrementScore(CORRECT_BONUS);
+    } else {
+      wrongAnswer();
     }
 
     selectedChoice.parentElement.classList.add(classToApply);
@@ -198,4 +200,4 @@ startGame();
 
 // evoke timer function
 startTimer();
-wrongAnswer();
+// wrongAnswer();
