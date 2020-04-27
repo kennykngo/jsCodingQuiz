@@ -18,23 +18,23 @@
       <div id="timerDisplay"></div>
     </nav>
     <div class="container">
-      <div id="game" class="justify-content-center flex-column">
-        <div id="hud" class="d-flex justify-content-around">
-          <div id="hud-item">
-            <p id="progressText" class="hud-prefix">
+      <div id="game" class="flex-column w-100">
+        <div id="hud" class="d-flex justify-content-between">
+          <div id="hud-item" class="w-100">
+            <p id="progressText" class="hud-prefix mr-0">
               Question
             </p>
-            <div id="progressBar" class="">
+            <div id="progressBar" class="w-100">
               <div id="progressBarFull"></div>
             </div>
             <h1 class="hud-main-tex text-centert" id="questionCounter"></h1>
             </h1>
           </div>
-          <div id="hud-item">
-            <p class="hud-prefix text-center">
-              Score
+          <div id="hud-item" class="d-flex flex-row">
+            <p class="hud-prefix">
+              Score:&nbsp;
             </p>
-            <h1 class="hud-main-text text-center" id="score">
+            <h1 class="hud-main-text m-0" id="score">
               0
             </h1>
           </div>

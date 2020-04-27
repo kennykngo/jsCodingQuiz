@@ -1,6 +1,6 @@
 html,
 body {
-  margin: 0;
+  margin: 0 !important;
   padding: 0;
 }
 .container {
@@ -9,16 +9,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 80rem;
-  margin: 0 auto;
+  /* max-width: 80rem; */
+  /* margin: 0 auto; */
 }
 
 .choice-container {
   display: flex;
+  margin: 0;
   margin-bottom: 0.5rem;
   width: 100%;
   font-size: 1.2rem;
   border: 0.1rem solid rgb(86, 165, 235, 0.25);
+  height: 7rem;
 }
 
 .choice-container:hover {
@@ -53,10 +55,11 @@ body {
 /* score counter */
 .hud-prefix {
   font-size: 2rem;
+  padding: 0;
 }
 
 #progressBar {
-  width: 20rem;
+  /* width: 20rem; */
   height: 4rem;
   border: 0.3rem solid #56a5eb;
 }
@@ -65,4 +68,28 @@ body {
   height: 3.4rem;
   background-color: #56a5eb;
   width: 0%;
+}
+
+.min-width-50 {
+  min-width: 50%;
+}
+
+/* FORMS  */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin-bottom: 1rem;
+  width: 20rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
+
+input::placeholder {
+  color: #aaa;
 }
