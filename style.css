@@ -93,3 +93,12 @@ input {
 input::placeholder {
   color: #aaa;
 }
+
+.high-score {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.high-score:hover {
+  transform: scale(1.025);
+}
