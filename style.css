@@ -62,6 +62,7 @@ body {
   /* width: 20rem; */
   height: 4rem;
   border: 0.3rem solid #56a5eb;
+  border-radius: 15px;
 }
 
 #progressBarFull {
